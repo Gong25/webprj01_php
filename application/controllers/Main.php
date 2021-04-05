@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Main extends CI_Controller{
     function __construct(){
@@ -10,12 +11,12 @@ class Main extends CI_Controller{
 
 
     public function index(){
-        $this->main()
+        $this->main();
     }
 
     public function main(){
 
-        $this->load->view('Main')
+        $this->load->view('v_main');
 
     }
 
